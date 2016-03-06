@@ -1,0 +1,91 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="js/responsiveslides.min.js"></script>
+        
+        
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div id="container">
+        
+        <header>
+            <img src="img/marvel.png" alt="logo">
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">BOOK TICKETS</a></li>
+                    <li><a href="#">SEE ME IN PRIVATE</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="section main-promo"><img src="img/main.jpg" alt="main"></div>
+        
+        <div class="section tickets">
+            <h2>GET TICKETS NOW!</h2>
+            Location : <input type="text">
+            Date : <input type="text" id="datepicker">
+            <input type="submit" value="Book!">
+        </div>
+
+        <div class="section social">
+            <i class="fa fa-twitter fa-4x size"></i> Visit Twitter
+            <i class="fa fa-facebook fa-4x"></i> Visit Facebook
+        </div>
+        
+        <div class="section trailer">
+            <h2>Trailer</h2>
+            <div id="vid"><iframe width="854" height="480" src="https://www.youtube.com/embed/9vN6DHB6bJc" frameborder="0" allowfullscreen></iframe></div>
+        </div>
+            
+        <div class="section slider">
+            <ul class="rslides" id="slider">
+              <li><img src="img/1.jpg" alt=""></li>
+              <li><img src="img/2.png" alt=""></li>
+              <li><img src="img/3.jpg" alt=""></li>
+              <li><img src="img/4.jpg" alt=""></li>
+              <li><img src="img/5.jpg" alt=""></li>
+            </ul>
+        </div>
+            
+        <div class="section footer">
+            Copyright &copy; MARVEL 2016    
+        </div>
+            
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+       $(function () {
+
+      // Slideshow 1
+      $("#slider1").responsiveSlides({
+        maxwidth: 800,
+        speed: 800
+      });
+    });
+        </script>
+        
+    </body>
+</html>
